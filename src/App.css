@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  height: 80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: #151515;
+  padding: 0 30px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo_o {
+  color: rgb(212, 0, 0);
+}
+nav img {
+  width: 40px;
+  border-radius: 50%;
+}
+form {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.product_list {
+  padding: 30px;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+  /* background-color: red; */
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.single_product {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+.single_product:hover{
+  background-color: #1515150c;
+}
+.prod_start {
+  display: flex;
+  gap: 20px;
+}
+.single_product img {
+  width: 50px;
+  border-radius: 50%;
+}
+.product_name {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product_price {
+  color: grey;
+  font-size: 14px;
+}
+.prod_group {
+  display: flex;
+  flex-direction: column;
+}
+.button_group {
+  /* align-self: flex-end; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button_group button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+  transition: all ease-in-out 0.2s;
+  background-color: white;
+}
+.button_group button:hover {
+  background-color: #151515;
+  color: white;
+  scale: 1.1;
+  border: none;
 }
