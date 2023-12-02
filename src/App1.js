@@ -1,8 +1,25 @@
 import "./App.css";
 import Nav from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
+// function useInterval(timeout, getValue) {
+//   const [value, setValue] = useState(getValue);
+//   useEffect(() => {
+//     const intervalID = setInterval(() => setValue(getValue()), timeout);
+//     return function () {
+//       clearInterval(intervalID);
+//     };
+//   }, [getValue, timeout]);
+//   return value;
+// }
+// const getCurrentDate = () => new Date();
 
 function App() {
+  // const [count, setCount] = useState(0);
+  // const date = useInterval(1000, getCurrentDate);
+  // useEffect(() => {
+  //   document.title = `You clicked ${count} times`;
+  // });
+
   const submitForm = (event) => {
     event?.preventDefault();
     alert("sign up successful");
@@ -46,6 +63,12 @@ function App() {
           Submit
         </button>
       </form>
+   
+      {/* <div>
+        <p>Count the number clicks in your page : </p>
+        <button onClick={() => setCount(count + 1)}>Click here</button>
+        <p>Nous sommes le {date.toLocaleString("fr-FR")}</p>
+      </div> */}
     </div>
   );
 }
